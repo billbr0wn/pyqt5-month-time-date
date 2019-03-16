@@ -58,7 +58,7 @@ class _Window_(QMainWindow):
 #--------------convert form military to normal time-----o
             
         self.hour = self.time[3]
-        if self.hour >= 12:
+        if self.hour >= 13:
             self.hour = self.hour - 12
         self.hour = str(self.hour) + ':'
 
