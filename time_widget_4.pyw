@@ -66,7 +66,7 @@ class _Window_(QMainWindow):
             pass
 
 
-#--------------convert form military to normal time-----o
+#--------------convert from military to normal time-----o
 
         if self.hour >= (13):
             self.hour = self.hour - 12
