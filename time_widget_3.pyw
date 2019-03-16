@@ -60,6 +60,8 @@ class _Window_(QMainWindow):
         self.hour = self.time[3]
         if self.hour >= 13:
             self.hour = self.hour - 12
+        elif self.hour == (0):
+            self.hour = 12
         self.hour = str(self.hour) + ':'
 
     
