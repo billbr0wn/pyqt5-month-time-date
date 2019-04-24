@@ -144,7 +144,7 @@ class _Window_(QMainWindow):
         self.label_min.setText      (str(self.minute))#<---value from psutil:boot
         #self.label_arch.setWordWrap  (True)#<---------allow more text in label----o
         self.label_min.setAlignment (Qt.AlignLeft)
-        self.label_min.move         (195,35)
+        self.label_min.move         (210,35)
 ##        self.label_min.adjustSize ()#<-----------adj label size---o
         self.label_min.raise_()
 
