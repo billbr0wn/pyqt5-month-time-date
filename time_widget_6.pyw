@@ -80,8 +80,8 @@ class _Window_(QMainWindow):
 ##        
         self.label_month.setText      (self.month)#<---value from psutil:boot
 ##        #self.label_arch.setWordWrap  (True)#<---------allow more text in label----o
-        self.label_month.setAlignment (Qt.AlignLeft)
-        self.label_month.move         (10,35)
+        self.label_month.setAlignment (Qt.AlignRight)
+        self.label_month.move         (0,35)
 ####        self.label_month.adjustSize ()#<-----------adj label size---o
         self.label_month.raise_()
 
@@ -96,7 +96,7 @@ class _Window_(QMainWindow):
         
         self.label_comma.setText      (',')#<---value from psutil:boot
         #self.label_arch.setWordWrap  (True)#<---------allow more text in label----o
-        self.label_comma.setAlignment (Qt.AlignLeft)
+##        self.label_comma.setAlignment (Qt.AlignLeft)
         self.label_comma.move         (102,35)
 ##        self.label_comma.adjustSize ()#<-----------adj label size---o
         self.label_comma.raise_()
@@ -113,7 +113,7 @@ class _Window_(QMainWindow):
         self.label_day.setText      (str(self.day))#<---value from psutil:boot
         #self.label_arch.setWordWrap  (True)#<---------allow more text in label----o
         self.label_day.setAlignment (Qt.AlignLeft)
-        self.label_day.move         (109,35)
+        self.label_day.move         (112,35)
 ##        self.label_day.adjustSize ()#<-----------adj label size---o
         self.label_day.raise_()
 
@@ -128,8 +128,8 @@ class _Window_(QMainWindow):
         
         self.label_hour.setText      (self.hour)#<---value from psutil:boot
         #self.label_arch.setWordWrap  (True)#<---------allow more text in label----o
-        self.label_hour.setAlignment (Qt.AlignLeft)
-        self.label_hour.move         (165,35)
+        self.label_hour.setAlignment (Qt.AlignRight)
+        self.label_hour.move         (105,35)
 ##        self.label_hour.adjustSize ()#<-----------adj label size---o
         self.label_hour.raise_()
 
@@ -143,8 +143,8 @@ class _Window_(QMainWindow):
         
         self.label_min.setText      (str(self.minute))#<---value from psutil:boot
         #self.label_arch.setWordWrap  (True)#<---------allow more text in label----o
-        self.label_min.setAlignment (Qt.AlignLeft)
-        self.label_min.move         (210,35)
+        self.label_min.setAlignment (Qt.AlignRight)
+        self.label_min.move         (143,35)
 ##        self.label_min.adjustSize ()#<-----------adj label size---o
         self.label_min.raise_()
 
@@ -159,8 +159,8 @@ class _Window_(QMainWindow):
         
         self.label_am_pm.setText      (str(self.am_pm))#<---value from psutil:boot
         #self.label_am_pm.setWordWrap  (True)#<---------allow more text in label----o
-        self.label_am_pm.setAlignment (Qt.AlignLeft)
-        self.label_am_pm.move         (235,40)
+        self.label_am_pm.setAlignment (Qt.AlignRight)
+        self.label_am_pm.move         (195,40)
 ##        self.label_am_pm.adjustSize ()#<-----------adj label size---o
         self.label_am_pm.raise_()
 ##        self.label_am_pm.show()
@@ -177,7 +177,7 @@ class _Window_(QMainWindow):
         
         self.label_weekday.setText      (str(self.weekday))#<---value from psutil:boot
         self.label_weekday.setAlignment (Qt.AlignLeft)
-        self.label_weekday.move         (300,35)
+        self.label_weekday.move         (310,35)
         self.label_weekday.raise_()
 
 
@@ -207,7 +207,7 @@ class _Window_(QMainWindow):
 
 
 #----
-            
+          
         if self.time[1] == (1):
             self.month = 'Jan'
         elif self.time[1] == (2):
@@ -234,7 +234,6 @@ class _Window_(QMainWindow):
             self.month = 'Dec'
         else:
             print('error...')
-
 
 
 #-----------------am/pm-------------------o
